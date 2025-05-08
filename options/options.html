@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSLink秘密鍵のセットアップ</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+
+<body>
+  <h2>SSLink署名設定</h2>
+  <form id="setup-form">
+    <label>鍵の名前:<br>
+      <input type="text" id="keyName" autocomplete="off" required>
+    </label><br><br>
+    <label>秘密鍵:<br>
+      <input type="text" id="privateKey" autocomplete="off" required>
+    </label><br><br>
+    <label>パスフレーズ:<br>
+      <input type="password" id="passphrase" autocomplete="off" required>
+    </label><br><br>
+    <label>
+      VC情報を追加する:
+      <input type="checkbox" id="hasVcInfo">
+    </label>
+    <div id="vc-fields">
+      <label>VC-JWS:<br>
+        <textarea id="vcJws" rows="3"></textarea>
+      </label><br>
+      <label>VCハッシュ:<br>
+        <input type="text" id="vcHash">
+      </label><br>
+    </div><br>
+    <button type="submit">保存</button>
+    <p id="status"></p>
+  </form>
+
+  <ul id="keyList"></ul>
+
+  <script src="options.js"></script>
+</body>
+
+</html>

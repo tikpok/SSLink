@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+  }
+  
+  .status {
+    font-size: 14px;
+    color: green;
+  }
+  .buttonn
+  
+  #status-log {
+    white-space: pre-line;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+  }
+  
